@@ -1,6 +1,7 @@
-Flask 
+flask 
 numpy
 scikit-learn
 matplotlib 
 pandas 
 seaborn
+pickle
