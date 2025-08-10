@@ -6,8 +6,23 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>
-        Hello, World!
-    </h1>
+    <div>
+    <h1>California House Prediction</h1>
+    <form action="{{url_for('predict')}}"method = "post">
+        <input type="text" name = "MedInc" placeholder="Median Income" required = "true" /><br>
+        <input type="text" name = "HouseAge" placeholder="Age of House" required = "true" /><br>
+        <input type="text" name = "AveRooms" placeholder="Average Rooms" required = "true" /><br>
+        <input type="text" name = "AveBedrms" placeholder="Average Bedrooms" required = "true" /><br>
+        <input type="text" name = "Population" placeholder="Block group population" required = "true" /><br>
+        <input type="text" name = "AveOccup" placeholder="Average Household Members" required = "true" /><br>
+        <input type="text" name = "Latitude" placeholder="Latitude" required = "true" /><br>
+        <input type="text" name = "Longitude" placeholder="Longitude" required = "true" /><br>
+
+        <button type = "submit" class = "btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+</div>
+
+{{prediction_text}}
+    
 </body>
 </html>
