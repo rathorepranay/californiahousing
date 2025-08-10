@@ -4,5 +4,4 @@ scikit-learn
 matplotlib 
 pandas 
 seaborn
-pickle
 gunicorn
